@@ -1,4 +1,4 @@
-# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Codacy Grade][codacy-image]][codacy-url]
 > Diabetes Discord Bot
 
 ## Installation
@@ -26,3 +26,5 @@ GPL-3.0+ © [Cas Eliens](https://github.com/cascer1)
 [daviddm-url]: https://david-dm.org/cascer1/Diabot
 [coveralls-image]: https://coveralls.io/repos/cascer1/Diabot/badge.svg
 [coveralls-url]: https://coveralls.io/r/cascer1/Diabot
+[codacy-image]: https://api.codacy.com/project/badge/Grade/7eb5dded36de46638d4b306f96ddc5d4
+[codacy-url]: https://www.codacy.com/app/cascer1/diabot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cascer1/diabot&amp;utm_campaign=Badge_Grade
