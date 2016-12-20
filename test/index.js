@@ -1,10 +1,16 @@
 'use strict';
 
-var assert = require('assert');
-var diabot = require('../lib');
+let assert = require('assert');
+// var diabot = require('../lib');
+let functions = require("../lib/functions.js");
 
-describe('diabot', function () {
-  it('should have unit test!', function () {
-    assert(false, 'we expected this package author to add actual unit tests.');
+
+
+describe('fixture', () => {
+  it('can convert mmol/L to mg/dL', () => {
+    let input = 5.5;
+    let expected = 99.1;
+    let actual = functions.convertToMgdl(input);
+    assert.equal(actual, expected);
   });
 });
