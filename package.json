@@ -29,8 +29,7 @@
     "clapp": "^1.1.1",
     "discord-bot": "^0.2.16",
     "discord.js": "^10.0.1",
-    "fs": "0.0.1-security",
-    "opusscript": "0.0.1"
+    "fs": "0.0.1-security"
   },
   "devDependencies": {
     "eslint": "^3.1.1",
