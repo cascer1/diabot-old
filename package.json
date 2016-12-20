@@ -16,7 +16,7 @@
   ],
   "bugs": "https://github.com/cascer1/diabot/issues",
   "scripts": {
-    "bot": "node ./lib/index.js",
+    "bot": "node bot.js",
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
@@ -27,6 +27,7 @@
   "license": "GPL-3.0+",
   "dependencies": {
     "clapp": "^1.1.1",
+    "discord-bot": "^0.2.16",
     "discord.js": "^10.0.1",
     "opusscript": "0.0.1"
   },
