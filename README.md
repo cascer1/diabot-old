@@ -1,6 +1,4 @@
-# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Codacy Grade][codacy-image]][codacy-url]
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7eb5dded36de46638d4b306f96ddc5d4)](https://www.codacy.com/app/cascer1/diabot?utm_source=github.com&utm_medium=referral&utm_content=cascer1/diabot&utm_campaign=badger)
+# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Codacy Grade][codacy-image]][codacy-url]
 
 > Diabetes Discord Bot
 
