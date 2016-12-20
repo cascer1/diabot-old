@@ -12,3 +12,5 @@ before_script:
   - npm install -g gulp
   - npm install
 script: npm test
+after_success:
+  - coveralls
