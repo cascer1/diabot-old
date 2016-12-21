@@ -2,7 +2,11 @@
 
 > Diabetes Discord Bot
 
-## Installation
+## Easy Installation
+
+Click [here]() to authorize this bot for your Discord server.
+
+## Less Easy Installation
 
 Clone this repository, and run:
 ```sh
@@ -12,11 +16,13 @@ $ npm install
 ## Usage
 
 ```js
-$ npm run bot
+$ npm start
 ```
 ## License
 
 GPL-3.0+ © [Cas Eliens](https://github.com/cascer1)
+
+The avatar image for diabot was created by [faythe](https://www.instagram.com/taintedwheat/)
 
 
 [npm-image]: https://badge.fury.io/js/diabot.svg
