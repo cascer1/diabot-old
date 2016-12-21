@@ -1,6 +1,6 @@
 {
-  "name": "Diabot",
-  "version": "1.0.0",
+  "name": "diabot",
+  "version": "0.2.0",
   "description": "Diabetes Discord Bot",
   "homepage": "https://github.com/cascer1/diabot",
   "author": "Cas Eliens <cas.eliens@gmail.com>",
@@ -12,7 +12,8 @@
     "diabetes",
     "discord",
     "bot",
-    "diabot"
+    "diabot",
+    "robot"
   ],
   "bugs": "https://github.com/cascer1/diabot/issues",
   "scripts": {
