@@ -12,5 +12,3 @@ install:
   - npm install -g gulp
   - npm install --no-optional
 script: npm test
-after_success:
-  - coveralls
