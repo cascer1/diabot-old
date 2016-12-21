@@ -8,3 +8,7 @@ notifications:
       - cas.eliens@gmail.com
     on_success: change
     on_failure: change
+install:
+  - npm install -g gulp
+  - npm install --no-optional
+script: npm test
