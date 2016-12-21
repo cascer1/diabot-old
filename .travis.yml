@@ -1,14 +1,23 @@
 language: node_js
 node_js:
-  - v7
-  - v6
+- v7
+- v6
 notifications:
   email:
     recipients:
-      - cas.eliens@gmail.com
+    - cas.eliens@gmail.com
     on_success: change
     on_failure: change
 install:
-  - npm install -g gulp
-  - npm install --no-optional
+- npm install -g gulp
+- npm install --no-optional
 script: npm test
+deploy:
+  provider: npm
+  email: cas.eliens@gmail.com
+  api_key:
+    secure: HF75GFOz3IiE2ANSkmo0qs5x8xBqLJXSI0dheXJOIDc0cDkSGnfdXLLR0TZ69gkekCAsVYqyAF8YzfKM066Xbu4ZzE0fmArsykmrcEaIgKTndN1u+jpt6SAbPI87t6gaQFQxiDlQSttNn4uQBlFpEPU+tMONn7yoo+8iSw4eYrUnm+6vHZloVco2xS7yYT8eOr3kiVCO2jUiFpgDqA+THn806jBHyrLZsLyFzLmQn2/1khFYRVIW2kpCB7kj7J3pk02O7Od4FORYvCvhbKaQPmTkRD0hiyP9mXOvPapoaTJoqZ9m59+oCf4un6ojONocvVY7hGRTsYuY1DBOmucjF173wsRny/aL0uZ7esaMen8O6hOVp1QeVaR+xLTsEi1736Hhm182t6HBP4B1lzWtt4UKbwDsWuGiT3mLRlwGD3xNVIAtbkXjx41U4iKiGHNl0YyUYMakKLwBOl46h6x89xF6QoDBjXOCfcqYr7/aihJ1lYyAcjeOeR0YL0JiPzYbu4VFmUdL0oxXmq0+nxKXPhOdZoZgzy3LKYDZm2F2G8TwUV97pEAjRXE7DzkLRYGamiXykf/bCmv0rTl9kc78nuJkVbxyqkjL5BbbmPr5rTlxDXRcFlCkMR0eltZJFG5vnnnbO2cFnIS6JumrMeGea9RJzIEiEQ1sWoU8d+KyBBk=
+  on:
+    tags: true
+    repo: cascer1/diabot
+    branch: master
