@@ -58,7 +58,7 @@ gulp.task('coveralls', ['test'], function () {
         .pipe(coveralls());
 });
 
-gulp.task('codacy', ['coveralls'], function codacyTask() {
+gulp.task('codacy', ['test'], function codacyTask() {
     if(!process.env.CI) {
         return;
     }
