@@ -8,6 +8,7 @@ let istanbul = require('gulp-istanbul');
 let nsp = require('gulp-nsp');
 let plumber = require('gulp-plumber');
 let coveralls = require('gulp-coveralls');
+let codacy = require('gulp-codacy');
 
 gulp.task('static', function () {
     return gulp.src('**/*.js')
