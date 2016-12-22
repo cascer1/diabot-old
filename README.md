@@ -4,7 +4,8 @@
 
 ## Easy Installation
 
-Click [here]() to authorize this bot for your Discord server.
+Click [here](https://duco.rocks/diabot-add) to authorize this bot for your Discord server.  
+If you like, you can also add the development version by authorizing it [here](https://duco.rocks/diabot-test-add).
 
 Type `-diabot --help` for a list of commands.
 type `-diabot <command> --help` for help on a specific command.
