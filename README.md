@@ -4,7 +4,8 @@
 
 ## Easy Installation
 
-Click [here]() to authorize this bot for your Discord server.
+Click [here](https://duco.rocks/diabot-add) to authorize this bot for your Discord server.  
+If you like, you can also add the development version by authorizing it [here](https://duco.rocks/diabot-test-add).
 
 Type `-diabot --help` for a list of commands.
 type `-diabot <command> --help` for help on a specific command.
@@ -22,7 +23,11 @@ First, make sure to have a user bot for Discord, if you don't you can make one [
 
 Save the app bot user token in either an environment variable named `TOKEN`, or in the `config.js` file.
 
-```js
+You'll also need to give the bot a MySQL server to connect to. You can do this by adding an environment variable called `JAWSDB_URL` with a connection string in it:
+
+    mysql://username:password@host:3306/database
+
+```javascript
 $ npm start
 ```
 ## License
