@@ -23,9 +23,13 @@ First, make sure to have a user bot for Discord, if you don't you can make one [
 
 Save the app bot user token in either an environment variable named `TOKEN`, or in the `config.js` file.
 
-You'll also need to give the bot a MySQL server to connect to. You can do this by adding an environment variable called `JAWSDB_URL` with a connection string in it:
+The bot also needs a MySQL database to connect to. It uses environment variables to get login details:
 
-    mysql://username:password@host:3306/database
+* `DIABOT_DB_HOST`: Database host
+* `DIABOT_DB_USER` : Database username
+* `DIABOT_DB_PASS`: Database password
+* `DIABOT_DB_NAME`: Database name
+* `DIABOT_DB_LIMIT`: Database connection limit
 
 ```javascript
 $ npm start
