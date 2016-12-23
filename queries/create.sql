@@ -1,13 +1,20 @@
-CREATE TABLE IF NOT EXISTS `users` (
-  `id`   VARCHAR(32)
-         COLLATE utf8_unicode_ci NOT NULL,
-  `type` VARCHAR(45)
-         COLLATE utf8_unicode_ci DEFAULT 'No',
-  PRIMARY KEY (`id`)
+CREATE TABLE `users` (
+  `id`       VARCHAR(32)
+             COLLATE utf8_unicode_ci NOT NULL,
+  `serverId` VARCHAR(32)
+             COLLATE utf8_unicode_ci NOT NULL,
+  `type`     VARCHAR(45)
+             CHARACTER SET utf8 DEFAULT 'NONE',
+  PRIMARY KEY (`id`, `serverId`),
+  KEY `server_user_idx` (`serverId`),
+  CONSTRAINT `server_user` FOREIGN KEY (`serverId`) REFERENCES `servers` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
 )
   ENGINE = InnoDB
   DEFAULT CHARSET = utf8
   COLLATE = utf8_unicode_ci;
+
 
 CREATE TABLE IF NOT EXISTS `rates` (
   `userId`    VARCHAR(32)
@@ -57,3 +64,18 @@ CREATE TABLE IF NOT EXISTS `settings` (
   ENGINE = InnoDB
   DEFAULT CHARSET = utf8
   COLLATE = utf8_unicode_ci;
+
+CREATE TABLE `types` (
+  `serverId` VARCHAR(32)
+             COLLATE utf8_unicode_ci NOT NULL,
+  `name`     VARCHAR(32)
+             COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`serverId`, `name`),
+  CONSTRAINT `server_types` FOREIGN KEY (`serverId`) REFERENCES `servers` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8
+  COLLATE = utf8_unicode_ci;
+
