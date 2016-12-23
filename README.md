@@ -17,6 +17,8 @@ Clone this repository, and run:
 $ npm install
 ```
 
+Run the `queries/create.sql` queries on your database.
+
 ### Usage
 
 First, make sure to have a user bot for Discord, if you don't you can make one [here](https://discordapp.com/developers/applications/me).
