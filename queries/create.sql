@@ -105,4 +105,22 @@ CREATE TABLE `types` (
   DEFAULT CHARSET = utf8
   COLLATE = utf8_unicode_ci;
 
+/*
+==== ROLES ====
+ */
 
+CREATE TABLE `roles` (
+  `serverId` VARCHAR(32)
+             COLLATE utf8_unicode_ci NOT NULL,
+  `name`     VARCHAR(32)
+             COLLATE utf8_unicode_ci DEFAULT NULL,
+  `type`     VARCHAR(32)
+             COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`serverId`, `type`),
+  CONSTRAINT `server_roles` FOREIGN KEY (`serverId`) REFERENCES `servers` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8
+  COLLATE = utf8_unicode_ci;
