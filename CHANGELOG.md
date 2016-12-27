@@ -1,3 +1,19 @@
+## 0.5.3
+
+* Enforce number parameters for convert command
+* Deprecate `convertToMmol` and `convertToMgdl` commands
+* Add `removePrompt` and `removeReply` settings to commands to automatically remove messages and avoid clutter
+* Conversion commands now remove the message that prompted them
+* Add `getServerSetting <setting>` command
+
+## 0.5.2
+
+* Cleanly shut down on Heroku termination (SIGTERM)
+
+## 0.5.1
+
+* Christmas! (Added emoji to messages) :santa:
+
 ## 0.5.0
 
 * Server registration now automatically registers owner if they are not yet registered

@@ -28,6 +28,20 @@ module.exports = {
     // More info: https://discordapp.com/developers/docs/topics/permissions
     deleteAfterReply: {
         enabled: false,
-        time: 10000, // In milliseconds
+        time: 1000, // In milliseconds
+    },
+
+    // Same as deleteAfterReply, but only applies to messages sent by the bot
+    // Leaves messages sent to the bot in place
+    deleteReplyAfterReply: {
+        enabled: false,
+        time: 2500
+    },
+
+    // Same as deleteAfterReply, but only applies to messages sent to the bot
+    // Leaves messages sent by the bot in place
+    deletePromptAfterReply: {
+        enabled: false,
+        time: 1000
     }
 };
