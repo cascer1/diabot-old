@@ -1,14 +1,15 @@
 ## 0.5.3
 
 * Enforce number parameters for convert command
+* Deprecate `convertToMmol` and `convertToMgdl` commands
 
 ## 0.5.2
 
-* Christmas! (Added emoji to messages)
+* Cleanly shut down on Heroku termination (SIGTERM)
 
 ## 0.5.1
 
-* <insert generic bug fix message here>
+* Christmas! (Added emoji to messages) :santa:
 
 ## 0.5.0
 
