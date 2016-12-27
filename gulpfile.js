@@ -50,15 +50,6 @@ gulp.task('watch', function () {
     gulp.watch(['lib/**/*.js', 'test/**'], ['test']);
 });
 
-gulp.task('coveralls', ['test'], function () {
-    if (!process.env.CI) {
-        return;
-    }
-
-    return gulp.src(path.join(__dirname, 'coverage/lcov.info'))
-        .pipe(coveralls());
-});
-
 gulp.task('codacy', ['test'], function codacyTask() {
     if(!process.env.CI) {
         return;
@@ -73,4 +64,4 @@ gulp.task('codacy', ['test'], function codacyTask() {
 
 gulp.task('prepublish', ['nsp']);
 gulp.task('default', ['static', 'test', 'coveralls']);
-gulp.task('coverage', ['test', 'coveralls', 'codacy']);
+gulp.task('coverage', ['test', 'codacy']);
