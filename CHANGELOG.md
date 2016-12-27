@@ -1,3 +1,7 @@
+## 0.5.4
+
+* Improve code style consistency
+
 ## 0.5.3
 
 * Enforce number parameters for convert command
