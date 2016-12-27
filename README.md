@@ -1,4 +1,4 @@
-# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url] [![Codacy Grade][codacy-image]][codacy-url]
+# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coverage-image]][coverage-url] [![Codacy Grade][codacy-image]][codacy-url]
 
 > Diabetes Discord Bot
 
@@ -47,8 +47,8 @@ The avatar image for diabot was created by [faythe](https://www.instagram.com/ta
 [travis-url]: https://travis-ci.org/cascer1/diabot
 [daviddm-image]: https://david-dm.org/cascer1/diabot.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/cascer1/diabot
-[coveralls-image]: https://img.shields.io/coveralls/cascer1/diabot.svg
-[coveralls-url]: https://coveralls.io/github/cascer1/diabot
+[coverage-image]: https://api.codacy.com/project/badge/Coverage/7eb5dded36de46638d4b306f96ddc5d4
+[coverage-url]: https://www.codacy.com/app/cascer1/diabot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cascer1/diabot&amp;utm_campaign=Badge_Coverage
 [codacy-image]: https://api.codacy.com/project/badge/Grade/7eb5dded36de46638d4b306f96ddc5d4
 [codacy-url]: https://www.codacy.com/app/cascer1/diabot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cascer1/diabot&amp;utm_campaign=Badge_Grade
 [npm-image]: https://img.shields.io/npm/v/diabot.svg
