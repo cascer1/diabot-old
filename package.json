@@ -1,6 +1,6 @@
 {
   "name": "diabot",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Diabetes Discord Bot",
   "homepage": "https://github.com/cascer1/diabot",
   "author": "Cas Eliens <cas.eliens@gmail.com>",
@@ -48,7 +48,8 @@
     "gulp-line-ending-corrector": "^1.0.1",
     "gulp-mocha": "^3.0.1",
     "gulp-nsp": "^2.1.0",
-    "gulp-plumber": "^1.0.0"
+    "gulp-plumber": "^1.0.0",
+    "spdx-license-ids": "^2.0.0"
   },
   "eslintConfig": {
     "extends": "xo-space",
