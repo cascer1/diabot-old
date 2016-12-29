@@ -42,6 +42,6 @@ module.exports = {
     // Leaves messages sent by the bot in place
     deletePromptAfterReply: {
         enabled: false,
-        time: 1000
+        time: 2500
     }
 };
