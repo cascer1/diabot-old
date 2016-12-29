@@ -19,8 +19,6 @@
   "scripts": {
     "listener": "node ./lib/listener/index.js",
     "worker": "node ./lib/worker/index.js",
-    "start": "node ./lib/listener/index_old.js",
-    "echoer": "node ./lib/worker/listener.js",
     "prepublish": "gulp prepublish",
     "test": "gulp coverage",
     "init": "node ./lib/init.js"
