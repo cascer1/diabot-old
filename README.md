@@ -25,7 +25,7 @@ First, make sure to have a user bot for Discord, if you don't you can make one [
 
 Save the app bot user token in either an environment variable named `TOKEN`, or in the `config.js` file.
 
-The bot also needs a MySQL database to connect to. It uses environment variables to get login details:
+The bot also requires a MySQL database and Rabbit MQ instance. It uses the following environment variables to login:
 
 * `DIABOT_DB_HOST`: Database host
 * `DIABOT_DB_USER` : Database username
@@ -42,8 +42,17 @@ The bot also needs a MySQL database to connect to. It uses environment variables
 * `DIABOT_QUEUE_HEARTBEAT`: rabbitMQ heartbeat
 * `DIABOT_QUEUE_EXCHANGE`: rabbitMQ exchange name
 
+
+The bot requires one listener (for queueing messages) and as many workers as you believe are necessary. Workers will take messages from the queue and process them.
+
+.Starting your listener
 ```javascript
-$ npm start
+$ npm run listener
+```
+
+.Starting your worker(s)
+```javascript
+$ npm run worker
 ```
 ## License
 
