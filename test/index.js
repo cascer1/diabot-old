@@ -20,7 +20,7 @@
 "use strict";
 
 let assert = require("assert");
-let functions = require("../lib/functions.js");
+let functions = require("../lib/global/functions.js");
 
 
 describe("fixture", () => {
