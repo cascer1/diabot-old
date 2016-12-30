@@ -1,4 +1,4 @@
-# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coverage-image]][coverage-url] [![Codacy Grade][codacy-image]][codacy-url][![Donate][paypal-image]][paypal-url]
+# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coverage-image]][coverage-url] [![Codacy Grade][codacy-image]][codacy-url] [![Donate][paypal-image]][paypal-url]
 
 > Diabetes Discord Bot
 
