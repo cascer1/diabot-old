@@ -10,6 +10,7 @@ notifications:
     on_failure: change
 install:
 - npm install -g gulp
+- npm install
 # - npm install --no-optional
 script: npm test
 deploy:
