@@ -45,12 +45,12 @@ The bot also requires a MySQL database and Rabbit MQ instance. It uses the follo
 
 The bot requires one listener (for queueing messages) and as many workers as you believe are necessary. Workers will take messages from the queue and process them.
 
-.Starting your listener
+**Starting your listener**
 ```javascript
 $ npm run listener
 ```
 
-.Starting your worker(s)
+**Starting your worker(s)**
 ```javascript
 $ npm run worker
 ```
