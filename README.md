@@ -1,4 +1,4 @@
-# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coverage-image]][coverage-url] [![Codacy Grade][codacy-image]][codacy-url]
+# Diabot [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coverage-image]][coverage-url] [![Codacy Grade][codacy-image]][codacy-url] [![Donate][paypal-image]][paypal-url]
 
 > Diabetes Discord Bot
 
@@ -32,6 +32,15 @@ The bot also needs a MySQL database to connect to. It uses environment variables
 * `DIABOT_DB_PASS`: Database password
 * `DIABOT_DB_NAME`: Database name
 * `DIABOT_DB_LIMIT`: Database connection limit
+* `DIABOT_QUEUE_USER`: rabbitMQ username
+* `DIABOT_QUEUE_PASS`: rabbitMQ password
+* `DIABOT_QUEUE_HOST`: rabbitMQ host
+* `DIABOT_QUEUE_NAME`: rabbitMQ queue name
+* `DIABOT_QUEUE_VHOST`: rabbitMQ vhost
+* `DIABOT_QUEUE_PORT`: rabbitMQ port
+* `DIABOT_QUEUE_TIMEOUT`: rabbitMQ connection timeout
+* `DIABOT_QUEUE_HEARTBEAT`: rabbitMQ heartbeat
+* `DIABOT_QUEUE_EXCHANGE`: rabbitMQ exchange name
 
 ```javascript
 $ npm start
@@ -53,3 +62,5 @@ The avatar image for diabot was created by [faythe](https://www.instagram.com/ta
 [codacy-url]: https://www.codacy.com/app/cascer1/diabot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cascer1/diabot&amp;utm_campaign=Badge_Grade
 [npm-image]: https://img.shields.io/npm/v/diabot.svg
 [npm-url]: https://www.npmjs.com/package/diabot
+[paypal-image]: https://img.shields.io/badge/Donate-PayPal-green.svg
+[paypal-url]: https://duco.rocks/diabot-donate
