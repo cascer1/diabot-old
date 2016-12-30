@@ -32,6 +32,15 @@ The bot also needs a MySQL database to connect to. It uses environment variables
 * `DIABOT_DB_PASS`: Database password
 * `DIABOT_DB_NAME`: Database name
 * `DIABOT_DB_LIMIT`: Database connection limit
+* `DIABOT_QUEUE_USER`: rabbitMQ username
+* `DIABOT_QUEUE_PASS`: rabbitMQ password
+* `DIABOT_QUEUE_HOST`: rabbitMQ host
+* `DIABOT_QUEUE_NAME`: rabbitMQ queue name
+* `DIABOT_QUEUE_VHOST`: rabbitMQ vhost
+* `DIABOT_QUEUE_PORT`: rabbitMQ port
+* `DIABOT_QUEUE_TIMEOUT`: rabbitMQ connection timeout
+* `DIABOT_QUEUE_HEARTBEAT`: rabbitMQ heartbeat
+* `DIABOT_QUEUE_EXCHANGE`: rabbitMQ exchange name
 
 ```javascript
 $ npm start
