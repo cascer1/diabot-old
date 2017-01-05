@@ -2,7 +2,7 @@
 
 > Diabetes Discord Bot
 
-## Easy Installation
+## Add the bot to your server
 
 Click [here](https://duco.rocks/diabot-add) to authorize this bot for your Discord server.  
 If you like, you can also add the development version by authorizing it [here](https://duco.rocks/diabot-test-add).
@@ -10,7 +10,13 @@ If you like, you can also add the development version by authorizing it [here](h
 Type `-diabot --help` for a list of commands.
 type `-diabot <command> --help` for help on a specific command.
 
-## Less Easy Installation
+## Run the bot by yourself using Heroku
+[![Deploy on Heroku][deploy-image]][deploy-url]
+
+Make sure to run the `queries/create.sql` queries on your database.
+
+
+## Run the bot elsewhere
 
 Clone this repository, and run:
 ```sh
@@ -73,3 +79,5 @@ The avatar image for diabot was created by [faythe](https://www.instagram.com/ta
 [npm-url]: https://www.npmjs.com/package/diabot
 [paypal-image]: https://img.shields.io/badge/Donate-PayPal-green.svg
 [paypal-url]: https://duco.rocks/diabot-donate
+[deploy-image]:https://www.herokucdn.com/deploy/button.svg
+[deploy-url]: https://heroku.com/deploy

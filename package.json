@@ -1,6 +1,6 @@
 {
   "name": "diabot",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "description": "Diabetes Discord Bot",
   "homepage": "https://github.com/cascer1/diabot",
   "author": "Cas Eliens <cas.eliens@gmail.com>",
@@ -36,6 +36,7 @@
     "erlpack": "github:hammerandchisel/erlpack",
     "fs": "0.0.1-security",
     "mysql": "^2.12.0",
+    "node-graceful": "^0.2.3",
     "q": "^1.4.1",
     "rabbot": "^1.0.7"
   },

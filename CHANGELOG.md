@@ -1,3 +1,16 @@
+## 0.6.7
+
+* Improve listener and worker shutdown
+* add `app.json` for heroku deploy button
+
+## 0.6.6
+
+* Only cascer1 may use the `setStatus` command
+
+## 0.6.0
+
+* Who knows?
+
 ## 0.5.4
 
 * Improve code style consistency
