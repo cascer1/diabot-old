@@ -1,6 +1,7 @@
 ## 0.6.7
 
-* Improve listener shutdown
+* Improve listener and worker shutdown
+* add `app.json` for heroku deploy button
 
 ## 0.6.6
 
