@@ -32,9 +32,14 @@
 
   ],
   "env": {
-    "DIABOT_DB_HOST": {
-      "description": "MySQL host for the database",
+    "TOKEN": {
+      "description": "Discord app bot user token",
       "required": true
+    },
+    "DIABOT_DB_HOST": {
+      "description": "MySQL host for the database. If you use the included Jaws DB addon you may need to enter this after deploying",
+      "required": true,
+      "default": "mysql.example.com"
     },
     "DIABOT_DB_LIMIT": {
       "description": "Maximum number of concurrent database connections",
@@ -42,42 +47,42 @@
       "required": true
     },
     "DIABOT_DB_NAME": {
-      "description": "MySQL Database name",
+      "description": "MySQL Database name. If you use the included Jaws DB addon you may need to enter this after deploying",
       "required": true,
       "default": "dbname"
     },
     "DIABOT_DB_PASS": {
-      "description": "MySQL Database password",
+      "description": "MySQL Database password. If you use the included Jaws DB addon you may need to enter this after deploying",
       "required": true,
       "default": "password"
     },
     "DIABOT_DB_USER": {
-      "description": "MySQL Database username",
+      "description": "MySQL Database username. If you use the included Jaws DB addon you may need to enter this after deploying",
       "required": true,
       "default": "diabot"
-    },
-    "DIABOT_QUEUE_EXCHANGE": {
-      "description": "RabbitMQ exchange to use",
-      "required": true,
-      "default": "diabot"
-    },
-    "DIABOT_QUEUE_HEARTBEAT": {
-      "description": "RabbitMQ heartbeat",
-      "required": true,
-      "default": 10
     },
     "DIABOT_QUEUE_HOST": {
-      "description": "RabbitMQ host",
+      "description": "RabbitMQ host. If you use the included CloudAMQP addon you may need to enter this after deploying",
       "required": true,
       "default": "queue.domain.com"
     },
+    "DIABOT_QUEUE_VHOST": {
+      "description": "RabbitMQ vhost. If you use the included CloudAMQP addon you may need to enter this after deploying",
+      "required": true,
+      "default": "diabot"
+    },
+    "DIABOT_QUEUE_USER": {
+      "description": "RabbitMQ username. If you use the included CloudAMQP addon you may need to enter this after deploying",
+      "required": true,
+      "default": "diabot"
+    },
     "DIABOT_QUEUE_PASS": {
-      "description": "RabbitMQ password",
+      "description": "RabbitMQ password. If you use the included CloudAMQP addon you may need to enter this after deploying",
       "required": true,
       "default": "password"
     },
     "DIABOT_QUEUE_NAME": {
-      "description": "RabbitMQ Queue name",
+      "description": "RabbitMQ Queue name. If you use the included CloudAMQP addon you may need to enter this after deploying",
       "required": true,
       "default": "diabot.messages"
     },
@@ -86,24 +91,20 @@
       "required": true,
       "default": 5672
     },
+    "DIABOT_QUEUE_EXCHANGE": {
+      "description": "RabbitMQ exchange to use. If you use the included CloudAMQP addon you may need to enter this after deploying",
+      "required": true,
+      "default": "diabot"
+    },
+    "DIABOT_QUEUE_HEARTBEAT": {
+      "description": "RabbitMQ heartbeat",
+      "required": true,
+      "default": 10
+    },
     "DIABOT_QUEUE_TIMEOUT": {
       "description": "RabbitMQ connection timeout",
       "required": true,
       "default": 2000
-    },
-    "DIABOT_QUEUE_USER": {
-      "description": "RabbitMQ username",
-      "required": true,
-      "default": "diabot"
-    },
-    "DIABOT_QUEUE_VHOST": {
-      "description": "RabbitMQ vhost",
-      "required": true,
-      "default": "diabot"
-    },
-    "TOKEN": {
-      "description": "Discord app bot user token",
-      "required": true
     }
   }
 }
