@@ -1,0 +1,109 @@
+{
+  "name": "Diabot",
+  "description": "A diabetes themed Discord bot",
+  "repository": "https://github.com/cascer1/diabot",
+  "logo": "https://raw.githubusercontent.com/cascer1/diabot/master/logo.png",
+  "keywords": [
+    "diabetes",
+    "discord",
+    "bot",
+    "diabot",
+    "robot"
+  ],
+  "formation": {
+    "listener": {
+      "quantity": 1,
+      "size": "Free"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "Free"
+    }
+  },
+  "addons": [
+    {
+      "plan": "cloudamqp:lemur",
+      "as": "RabbitMQ"
+    },
+    {
+      "plan": "jawsdb:kitefin",
+      "as": "Jaws DB"
+    }
+
+  ],
+  "env": {
+    "DIABOT_DB_HOST": {
+      "description": "MySQL host for the database",
+      "required": true
+    },
+    "DIABOT_DB_LIMIT": {
+      "description": "Maximum number of concurrent database connections",
+      "default": 4,
+      "required": true
+    },
+    "DIABOT_DB_NAME": {
+      "description": "MySQL Database name",
+      "required": true,
+      "default": "dbname"
+    },
+    "DIABOT_DB_PASS": {
+      "description": "MySQL Database password",
+      "required": true,
+      "default": "password"
+    },
+    "DIABOT_DB_USER": {
+      "description": "MySQL Database username",
+      "required": true,
+      "default": "diabot"
+    },
+    "DIABOT_QUEUE_EXCHANGE": {
+      "description": "RabbitMQ exchange to use",
+      "required": true,
+      "default": "diabot"
+    },
+    "DIABOT_QUEUE_HEARTBEAT": {
+      "description": "RabbitMQ heartbeat",
+      "required": true,
+      "default": 10
+    },
+    "DIABOT_QUEUE_HOST": {
+      "description": "RabbitMQ host",
+      "required": true,
+      "default": "queue.domain.com"
+    },
+    "DIABOT_QUEUE_PASS": {
+      "description": "RabbitMQ password",
+      "required": true,
+      "default": "password"
+    },
+    "DIABOT_QUEUE_NAME": {
+      "description": "RabbitMQ Queue name",
+      "required": true,
+      "default": "diabot.messages"
+    },
+    "DIABOT_QUEUE_PORT": {
+      "description": "RabbitMQ Queue port",
+      "required": true,
+      "default": 5672
+    },
+    "DIABOT_QUEUE_TIMEOUT": {
+      "description": "RabbitMQ connection timeout",
+      "required": true,
+      "default": 2000
+    },
+    "DIABOT_QUEUE_USER": {
+      "description": "RabbitMQ username",
+      "required": true,
+      "default": "diabot"
+    },
+    "DIABOT_QUEUE_VHOST": {
+      "description": "RabbitMQ vhost",
+      "required": true,
+      "default": "diabot"
+    },
+    "TOKEN": {
+      "description": "Discord app bot user token",
+      "required": true
+    }
+  }
+}
