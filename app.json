@@ -29,7 +29,6 @@
       "plan": "jawsdb:kitefin",
       "as": "Jaws DB"
     }
-
   ],
   "env": {
     "TOKEN": {
