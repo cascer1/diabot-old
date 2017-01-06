@@ -1,2 +1,2 @@
-worker: npm run worker
-listener: npm run listener
+worker: node ./lib/worker/index.js
+listener: node ./lib/listener/index.js
