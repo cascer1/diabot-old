@@ -1,3 +1,11 @@
+## 0.6.9
+
+* Modify Heroku Procfile to bypass npm
+
+## 0.6.8
+
+* Improve shutdown script order
+
 ## 0.6.7
 
 * Improve listener and worker shutdown
